@@ -2,7 +2,6 @@
 
 namespace McGo\Webhooks\Observers;
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use McGo\Webhooks\Models\WebhookRegistration;
 

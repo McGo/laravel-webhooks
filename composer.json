@@ -23,7 +23,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "McGo\\BoundLessWebhooks\\Tests\\": "tests/"
+      "McGo\\Webhooks\\Tests\\": "tests/"
     }
   },
   "extra": {
