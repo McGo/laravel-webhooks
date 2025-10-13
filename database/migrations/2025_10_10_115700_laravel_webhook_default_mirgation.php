@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration {
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('webhook_registrations', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('uuid')->unique();
+            $table->string('url');
+            $table->string('auth_header')->nullable();
+            $table->string('auth_token')->nullable();
+            $table->string('registered_by_ip')->nullable();
+            $table->string('registered_by_user_agent')->nullable();
+            $table->softDeletes();
+            $table->timestamps();
+        });
+    }
+};

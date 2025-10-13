@@ -1,0 +1,41 @@
+{
+  "name": "mcgo/laravel-webhooks",
+  "description": "Turn your Laravel app into a webhook powerhouse. ",
+  "authors": [
+    {
+      "name": "Mirko Haaser",
+      "email": "laravel-webhooks@mcgo.dev"
+    }
+  ],
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "orchestra/testbench": "^8.0|^9.0|^10.0"
+  },
+  "require": {
+    "laravel/framework": "^10.0|^11.0|^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "McGo\\Webhooks\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "McGo\\BoundLessWebhooks\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "McGo\\Webhooks\\WebhooksServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}
