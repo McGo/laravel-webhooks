@@ -1,6 +1,6 @@
 <?php
 
-namespace McGo\BoundLessWebhooks\Jobs;
+namespace McGo\Webhooks\Jobs;
 
 use McGo\Webhooks\Models\WebhookRegistration;
 use Illuminate\Contracts\Queue\ShouldQueue;

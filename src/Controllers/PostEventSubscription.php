@@ -1,6 +1,6 @@
 <?php
 
-namespace McGo\BoundLessWebhooks\Controllers;
+namespace McGo\Webhooks\Controllers;
 
 use Illuminate\Http\Request;
 use McGo\Webhooks\Models\WebhookRegistration;
