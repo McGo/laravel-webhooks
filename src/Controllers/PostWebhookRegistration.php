@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use McGo\Webhooks\Models\WebhookRegistration;
 use McGo\Webhooks\Resources\WebhookRegistrationResource;
 
-class PostEventSubscription
+class PostWebhookRegistration
 {
     public function __invoke(Request $request)
     {
