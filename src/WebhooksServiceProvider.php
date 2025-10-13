@@ -3,7 +3,7 @@
 namespace McGo\Webhooks;
 
 use Illuminate\Support\ServiceProvider;
-use McGo\BoundLessWebhooks\Observers\CreateUUIDForWebhookRegistration;
+use McGo\Webhooks\Observers\CreateUUIDForWebhookRegistration;
 use McGo\Webhooks\Models\WebhookRegistration;
 
 class WebhooksServiceProvider extends ServiceProvider
