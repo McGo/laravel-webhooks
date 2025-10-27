@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->string('uuid')->unique();
             $table->string('url');
             $table->string('auth_header')->nullable();
-            $table->string('auth_token')->nullable();
+            $table->text('auth_token')->nullable();
             $table->string('registered_by_ip')->nullable();
             $table->string('registered_by_user_agent')->nullable();
             $table->softDeletes();
